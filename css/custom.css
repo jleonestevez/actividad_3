@@ -103,3 +103,25 @@ select{
     font-size: 16px;
     text-align: center;
 }
+
+#row_contenedor{
+    background-color: #E5E5E5!important;
+}
+
+h1 {
+    font-weight: bold !important;
+}
+
+p{
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.card-text{
+    text-overflow: ellipsis !important;
+}
+
+
+#footer{
+    background-color: #E5E5E5!important;
+}
