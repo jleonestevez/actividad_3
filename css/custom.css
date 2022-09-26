@@ -2,6 +2,11 @@
     background-color: #1089FF!important;
 }
 
+.fondo-cuerpo{
+    background-color: #E5E5E5!important;
+
+}
+
 .div-fondo{
     background-image:URL('../img/hombre.png');
     background-position: left;
@@ -37,9 +42,8 @@
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(5px);
     border-radius: 16px;
-    margin-left: 348px;
+    margin-left: 511px;
     margin-top: 178px;
-
 }
 
 .box-avatar {
@@ -47,6 +51,56 @@
     height: 50px;
     background: rgba(231, 77, 137, 0.2);
     border-radius: 12px;
+}
+.box3-avatar {
+    background: #F5F5F5;
+    border-radius: 16px;
+    width: 60px;
+    height: 60px;
+}
+
+.titulo-over-card{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: #194350;
+}
+
+.texto-creacion{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.15px;
+    color: #839B97;
+}
+
+.texto-bajada{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 175% */
+    letter-spacing: 0.5px;
+
+    color: #839B97;
+
+
+}
+
+.box-jornada{
+    width: 100%;
+    height: 27px;
+    background: rgba(16, 137, 255, 0.1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1.25px;
+    color: #1089FF;
+    border-radius: 5px;
 }
 
 .box2-avatar{
@@ -87,9 +141,10 @@ h3{
 }
 
 input{
-    min-width:303px;
-    max-width:303px;
-    min-height: 60px;
+
+
+    min-width:45vh;
+    height: 60px;
     max-height: 60px;
     border-radius: 20px!important;
 }
@@ -105,13 +160,17 @@ button{
 
 }
 
-
+textarea{
+    min-width:45vh;
+    border-radius: 20px!important;
+    text-align: center!important;
+    color: #839B97!important;
+}
 
 
 select{
-    min-width:303px;
-    max-width:303px;
-    min-height: 60px;
+    min-width:45vh;
+    height: 60px;
     max-height: 60px;
     border-radius: 20px!important;
     text-align: center!important;
@@ -128,7 +187,7 @@ select{
 
 .form-control::-ms-input-placeholder { /* Microsoft Edge */
     color: #839B97;
-    font-size: 16px;
+    font-size: 4vh;
     text-align: center;
 }
 
@@ -141,7 +200,7 @@ h1 {
 }
 
 p{
-    white-space: nowrap;
+    white-space: pre-wrap;
     overflow: hidden;
 }
 
@@ -191,9 +250,16 @@ p{
     }
 }
 
+.custom-card{
+    background: #FFFFFF;
+    border-radius: 20px;
+    width: 355px;
+    height: auto;
+}
 
-
-
+h3{
+    font-size: 6vh;
+}
 
 @media (max-width: 1024px) {
 
@@ -204,6 +270,18 @@ p{
     .aura{
         margin-left: 25px;
 
+    }
+}
+@media (max-width: 912px) {
+
+    .box-2{
+        display: none;
+    }
+    .box{
+        display: none;
+    }
+    .aura{
+        display: none;
     }
 }
 @media (width: 1213px) {
@@ -218,3 +296,14 @@ p{
     }
 }
 
+@media (width: 1280px) {
+
+    .box-2{
+        display: none;
+    }
+
+    .aura{
+        margin-left: 40px;
+
+    }
+}
