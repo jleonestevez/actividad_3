@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/custom.css" rel="stylesheet">
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <title>Title</title>
     <script type="application/javascript">
 
@@ -53,17 +53,15 @@
                 tiempo: `${da}/${mo}/${ye}`
             }
 
-            validador(formulario);
+            if (validador(formulario)) {
+                document.getElementById("contenedor_cards").innerHTML += formateador(formulario);
 
+                document.getElementById("titulo").value = ""
+                document.getElementById("direccion").value = ""
+                document.getElementById("descripcion_corta").value = ""
+                document.getElementById("descripcion_larga").value = ""
+            }
 
-            document.getElementById("contenedor_cards").innerHTML += formateador(formulario);
-
-            document.getElementById("titulo").value = ""
-            document.getElementById("direccion").value = ""
-            document.getElementById("descripcion_corta").value = ""
-            document.getElementById("descripcion_larga").value = ""
-            document.getElementById("jornada").value = ""
-            document.getElementById("empresa").value = ""
 
 
 
@@ -92,7 +90,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Navbar brand -->
             <a class="navbar-brand d-flex" href="#" style="color:white">
-                <img src="./img/logo.png" alt="" width="50px" height="50px" class="d-inline-block align-text-top">
+                <img src="assets/img/logo.png" alt="" width="50px" height="50px" class="d-inline-block align-text-top">
                 <span class="align-self-center">Three Points</span>
             </a>
         </div>
@@ -177,7 +175,7 @@
                         <div class="col-3 d-flex flex-column justify-content-center">
                             <div class="box-avatar d-flex flex-column justify-content-center">
                                 <div>
-                                      <img src="./img/ballom.png" alt="" width="25px" height="25px"
+                                      <img src="assets/img/ballom.png" alt="" width="25px" height="25px"
                                            class="d-inline-block align-text-top">
                                 </div>
                             </div>
@@ -205,7 +203,7 @@
                         <div class="col-3 d-flex flex-column justify-content-center">
                             <div class="box2-avatar d-flex flex-column justify-content-center">
                                 <div>
-                                      <img src="./img/carta.png" alt="" width="25px" height="25px"
+                                      <img src="assets/img/carta.png" alt="" width="25px" height="25px"
                                            class="d-inline-block align-text-top">
                                 </div>
                             </div>
@@ -250,7 +248,7 @@
                     <div class="row">
                         <div class="col-2">
                             <div class="box3-avatar">
-                                <img src="./img/logoDummy.png" alt="" style="    width: 35px;height: 40px;margin: 5px;" class="d-inline-block align-text-top">
+                                <img src="assets/img/logoDummy.png" alt="" style="    width: 35px;height: 40px;margin: 5px;" class="d-inline-block align-text-top">
                             </div>
                         </div>
                         <div class="col-4 col-sm-6">
